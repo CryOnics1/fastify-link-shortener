@@ -1,4 +1,6 @@
 # Fastify AWS link shortener
+Shorten, create and share links with your friends.
+
 Just for fun 🙃
 
 ## 📖 Introduction
