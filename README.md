@@ -3,14 +3,6 @@ Shorten, create and share links with your friends.
 
 Just for fun 🙃
 
-Demo-server: https://aws-tests.ml/l/
-
-Demo-shorted-url: https://aws-tests.ml/l/CzFd5
-
-You can specify the hash length in the config file.
-
-ATTENTION! Your links on the demo server will live about ± 5 minutes (TTL)
-
 ## 📖 Introduction
 
 It's a simple example of working lambda with fastify, dynamoDB and serverless
@@ -21,6 +13,16 @@ It's a simple example of working lambda with fastify, dynamoDB and serverless
 - [Aws-lambda-fastify](https://github.com/fastify/aws-lambda-fastify)
 - DynamoDB
 - [Nanoid](https://github.com/ai/nanoid)
+
+**Demo-server:** https://aws-tests.ml/l/
+
+**Demo-shorted-url:** https://aws-tests.ml/l/CzFd5
+
+You can specify the hash length in the config file.
+
+**ATTENTION!** Your links on the demo server will live about ± 5 minutes (TTL)
+
+If you have got an attached domain, then add it in serverless.yml
 
 ## 👨🏻‍💻 <a name="quick-start"></a>Quick Start
 1. **Set-up your provider credentials.** [Watch the video on setting up credentials](https://www.youtube.com/watch?v=HSd9uYj2LJA)
