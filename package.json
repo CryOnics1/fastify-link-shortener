@@ -1,0 +1,24 @@
+{
+  "name": "fastify-link-shortener",
+  "version": "1.0.0",
+  "description": "Just for fun",
+  "main": "app.js",
+  "scripts": {
+    "lint": "standard",
+    "sls": "sls"
+  },
+  "author": "Artem Chernykh",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.11",
+    "serverless": "^1.58.0",
+    "serverless-offline": "^5.12.0",
+    "serverless-pseudo-parameters": "^2.5.0",
+    "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "aws-lambda-fastify": "^1.3.0",
+    "fastify": "^2.10.0",
+    "nanoid": "^2.1.7"
+  }
+}
