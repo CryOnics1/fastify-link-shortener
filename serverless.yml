@@ -19,6 +19,13 @@ provider:
   stackName: ${self:service}-${self:custom.stage}
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'eu-west-1'}
+#  apiGateway:
+#    restApiId:
+#      Ref: FastifyLinkApi
+#    restApiRootResourceId:
+#      Fn::GetAtt:
+#        - FastifyLinkApi
+#        - RootResourceId
 
 functions:
   shortener:
@@ -66,3 +73,16 @@ resources:
             Value: ${self:custom.linkTableName}
           - Key: 'Environment'
             Value: ${self:custom.stage}
+
+#    FastifyLinkApi:
+#      Type: AWS::ApiGateway::RestApi
+#      Properties:
+#        Name: FastifyLinkApi
+#    FastifyLinkApiMaping:
+#      Type: AWS::ApiGateway::BasePathMapping
+#      Properties:
+#        BasePath: l
+#        DomainName: your-url.com
+#        RestApiId:
+#          Ref: FastifyLinkApi
+#        Stage: dev
