@@ -3,6 +3,7 @@ service: fastify-link-shortener
 plugins:
   - serverless-offline
   - serverless-pseudo-parameters
+  - serverless-iam-roles-per-function
 
 package:
   exclude:
@@ -26,6 +27,8 @@ functions:
     description: fastify link shortener
     timeout: 30
     memorySize: 128
+    iamRoleStatementsName: ${self:service}-${self:custom.stage}-role
+    iamRoleStatementsInherit: true
     iamRoleStatements:
       - Effect: Allow
         Action:
