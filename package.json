@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "aws-lambda-fastify": "^1.3.0",
-    "fastify": "^2.10.0",
+    "fastify": "^2.15.1",
     "nanoid": "^2.1.7"
   }
 }
